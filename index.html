@@ -6,12 +6,14 @@
   <title>Darliane Ribeiro Cunha · Research Tools</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f4f6fb; color: #1a1a2e; line-height: 1.55; }
+    body { font-family: 'Segoe UI', sans-serif; background: #eef1f6; color: #1a2433; line-height: 1.55; }
 
     header {
-      background: linear-gradient(135deg, #0f1d4d, #2563eb);
-      color: white; padding: 48px 24px 40px; text-align: center;
+      background: linear-gradient(135deg, #081634, #0d2350);
+      color: white; padding: 48px 24px 40px; text-align: center; position: relative;
     }
+    header::after { content:""; position:absolute; left:0; right:0; bottom:0; height:3px;
+      background: linear-gradient(90deg, transparent, #c9a45b, transparent); opacity:.7; }
     header h1 { font-size: 2rem; font-weight: 700; letter-spacing: 0.4px; }
     header .role { margin-top: 8px; font-size: 1rem; opacity: 0.9; }
     header .intro { max-width: 740px; margin: 18px auto 0; font-size: 0.95rem; opacity: 0.92; }
@@ -24,8 +26,8 @@
 
     .section-title {
       font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 1.2px; color: #2563eb; margin: 36px 0 16px;
-      padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;
+      letter-spacing: 1.2px; color: #15366e; margin: 36px 0 16px;
+      padding-bottom: 8px; border-bottom: 2px solid #e3e8f0;
     }
     .section-title:first-child { margin-top: 0; }
 
@@ -33,7 +35,7 @@
 
     .card {
       background: white; border-radius: 14px; padding: 20px 22px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.06); border: 1.5px solid #e8edf5;
+      box-shadow: 0 1px 6px rgba(13,35,80,0.06); border: 1px solid #e3e8f0;
       display: flex; flex-direction: column;
     }
     .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
@@ -45,33 +47,33 @@
     .card-url { font-size: 0.72rem; color: #94a3b8; margin-top: 2px; }
     .trl {
       margin-left: auto; align-self: flex-start; white-space: nowrap;
-      background: #e0e7ff; color: #3730a3; font-size: 0.68rem; font-weight: 700;
+      background: #e7edf7; color: #15366e; font-size: 0.68rem; font-weight: 700;
       letter-spacing: 0.3px; padding: 4px 10px; border-radius: 999px;
     }
 
     .field { margin-top: 10px; font-size: 0.86rem; }
     .field .label {
-      display: inline-block; font-weight: 700; color: #1a1a6e;
+      display: inline-block; font-weight: 700; color: #0d2350;
       font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.5px;
       margin-bottom: 2px;
     }
     .field p { color: #475569; }
-    .field.audience .label { color: #2563eb; }
-    .field.audience p { color: #1a1a2e; font-weight: 500; }
+    .field.audience .label { color: #15366e; }
+    .field.audience p { color: #1a2433; font-weight: 500; }
 
     .visit {
       margin-top: 16px; align-self: flex-start; text-decoration: none;
-      background: #2563eb; color: white; font-weight: 600; font-size: 0.83rem;
+      background: #0d2350; color: white; font-weight: 600; font-size: 0.83rem;
       padding: 9px 18px; border-radius: 8px; transition: background 0.15s;
     }
-    .visit:hover { background: #1a1a6e; }
+    .visit:hover { background: #081634; }
 
     .bg-blue{background:#dbeafe;} .bg-green{background:#dcfce7;} .bg-orange{background:#ffedd5;}
     .bg-purple{background:#ede9fe;} .bg-pink{background:#fce7f3;} .bg-teal{background:#ccfbf1;}
     .bg-yellow{background:#fef9c3;} .bg-indigo{background:#e0e7ff;} .bg-red{background:#fee2e2;}
 
-    footer { text-align: center; padding: 28px 24px 40px; color: #94a3b8; font-size: 0.8rem; }
-    footer a { color: #2563eb; text-decoration: none; }
+    footer { text-align: center; padding: 28px 24px 40px; color: #8b97a8; font-size: 0.8rem; border-top: 1px solid #e3e8f0; }
+    footer a { color: #15366e; text-decoration: none; }
   </style>
 </head>
 <body>
