@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darliane Ribeiro Cunha · Research Tools</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f6fb; color: #1a1a2e; line-height: 1.55; }
+
+    header {
+      background: linear-gradient(135deg, #0f1d4d, #2563eb);
+      color: white; padding: 48px 24px 40px; text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: 0.4px; }
+    header .role { margin-top: 8px; font-size: 1rem; opacity: 0.9; }
+    header .intro { max-width: 740px; margin: 18px auto 0; font-size: 0.95rem; opacity: 0.92; }
+    header .trl-note {
+      max-width: 740px; margin: 14px auto 0; font-size: 0.8rem; opacity: 0.8;
+      border-top: 1px solid rgba(255,255,255,0.25); padding-top: 12px;
+    }
+
+    main { max-width: 980px; margin: 0 auto; padding: 32px 24px 56px; }
+
+    .section-title {
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1.2px; color: #2563eb; margin: 36px 0 16px;
+      padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;
+    }
+    .section-title:first-child { margin-top: 0; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+
+    .card {
+      background: white; border-radius: 14px; padding: 20px 22px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06); border: 1.5px solid #e8edf5;
+      display: flex; flex-direction: column;
+    }
+    .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .icon {
+      width: 44px; height: 44px; border-radius: 11px; display: flex;
+      align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;
+    }
+    .card-name { font-weight: 700; font-size: 1.02rem; }
+    .card-url { font-size: 0.72rem; color: #94a3b8; margin-top: 2px; }
+    .trl {
+      margin-left: auto; align-self: flex-start; white-space: nowrap;
+      background: #e0e7ff; color: #3730a3; font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.3px; padding: 4px 10px; border-radius: 999px;
+    }
+
+    .field { margin-top: 10px; font-size: 0.86rem; }
+    .field .label {
+      display: inline-block; font-weight: 700; color: #1a1a6e;
+      font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .field p { color: #475569; }
+    .field.audience .label { color: #2563eb; }
+    .field.audience p { color: #1a1a2e; font-weight: 500; }
+
+    .visit {
+      margin-top: 16px; align-self: flex-start; text-decoration: none;
+      background: #2563eb; color: white; font-weight: 600; font-size: 0.83rem;
+      padding: 9px 18px; border-radius: 8px; transition: background 0.15s;
+    }
+    .visit:hover { background: #1a1a6e; }
+
+    .bg-blue{background:#dbeafe;} .bg-green{background:#dcfce7;} .bg-orange{background:#ffedd5;}
+    .bg-purple{background:#ede9fe;} .bg-pink{background:#fce7f3;} .bg-teal{background:#ccfbf1;}
+    .bg-yellow{background:#fef9c3;} .bg-indigo{background:#e0e7ff;} .bg-red{background:#fee2e2;}
+
+    footer { text-align: center; padding: 28px 24px 40px; color: #94a3b8; font-size: 0.8rem; }
+    footer a { color: #2563eb; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Darliane Ribeiro Cunha, PhD</h1>
+  <div class="role">Research in Maritime AI · SDG Analytics · Sustainability Governance</div>
+  <p class="trl-note">
+    Each tool carries a Technology Readiness Level (TRL 1–9): TRL 3 an experimental proof of
+    concept, TRL 6 a demonstrated prototype, TRL 7 a prototype in an operational setting,
+    TRL 8 a complete and validated tool.
+  </p>
+</header>
+
+<main>
+
+  <div class="section-title">Research &amp; Text Analytics</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-purple">🔎</div>
+        <div><div class="card-name">ResearchMatch for Topic</div><div class="card-url">researchmatchfortopic-znnz.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Finds the leading researchers in any field. It searches paper titles and abstracts through OpenAlex, detects the dominant topics, and ranks authors by a balance of subject relevance and scholarly impact (h-index).</p></div>
+      <div class="field"><span class="label">How to use</span><p>Type a keyword or topic and the tool returns a ranked list of experts. Suggested searches are provided as a starting point.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers, PhD students and research managers scoping a field or seeking experts.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Identifies the key authors in a topic in seconds, replacing slow manual literature scanning.</p></div>
+      <a class="visit" href="https://researchmatchfortopic-znnz.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-teal">🧬</div>
+        <div><div class="card-name">ResearchMatch with ORCID</div><div class="card-url">researchmatch-chi.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Finds new potential collaborators aligned with an ORCID profile. Matching uses topic-vector (cosine) similarity over the profile's OpenAlex topics, and existing co-authors are excluded so the results are genuinely new contacts.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Enter any ORCID iD and review the aligned researchers the tool proposes.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers and groups looking to expand their collaboration network for proposals and studies.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Surfaces fresh, relevant collaborators automatically, saving hours of manual networking.</p></div>
+      <a class="visit" href="https://researchmatch-chi.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-red">🔤</div>
+        <div><div class="card-name">PDF → VOSviewer Network</div><div class="card-url">text-umber-delta.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 7</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Turns a set of PDFs into a word co-occurrence network for VOSviewer Online, detecting the most frequent terms automatically. Text is extracted entirely in the browser, with Portuguese and English stopwords removed and nothing sent to a server.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Upload the PDFs, set the network parameters (minimum frequency, co-occurrence and maximum terms), and download the JSON. Then open it at <a href="https://web.vosviewer.com/" target="_blank">VOSviewer Online (web.vosviewer.com)</a> to generate the visualisation.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers running bibliometric or literature reviews and text mining.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Automates the creation of co-occurrence maps from raw PDFs, a task that is slow and error prone by hand.</p></div>
+      <a class="visit" href="https://text-umber-delta.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-orange">🔠</div>
+        <div><div class="card-name">PDF Terms → VOSviewer</div><div class="card-url">textmining2.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 5</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A directed text-mining tool with a controlled vocabulary. You define the keywords and the app counts their occurrences and co-occurrences across your PDFs, with grouped synonyms, compound terms, wildcards and thematic categories, then generates a JSON file for VOSviewer Online. It complements PDF → VOSviewer Network, which detects terms automatically.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Upload the PDFs and list your keywords (group synonyms with "=", use "*" for variants and "[ ]" for categories, or load a domain pack). Set the network parameters and download the JSON, then open it at <a href="https://web.vosviewer.com/" target="_blank">VOSviewer Online (web.vosviewer.com)</a> to generate the visualisation.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers running directed bibliometric or content analysis with a predefined thesaurus.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Measures exactly the concepts the study cares about and maps them, without manual counting.</p></div>
+      <a class="visit" href="https://textmining2.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-yellow">🛰️</div>
+        <div><div class="card-name">Funding Calls Monitor · Brazil–Germany</div><div class="card-url">editaismonitorv2.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Automatically monitors and aggregates funding calls, scholarships and fellowships from German and Brazilian sources such as DAAD, DFG, the Humboldt Foundation, BMBF and UBA, Fraunhofer and EMSA, grouped by category including Maritime AI and decarbonisation.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Filter by country and category to scan the latest dated opportunities, then follow each link to its source.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers, PhD students and research managers seeking funding and mobility, with a focus on Brazil–Germany cooperation.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Replaces manual checking of many agency websites with a single, continuously updated feed.</p></div>
+      <a class="visit" href="https://editaismonitorv2.vercel.app/" target="_blank">Open tool</a>
+    </div>
+  </div>
+
+  <div class="section-title">Ports, Sustainability &amp; SDGs</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-blue">🇧🇷</div>
+        <div><div class="card-name">Brazil Port Data</div><div class="card-url">brazilportdata.com</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 8</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A research and data hub that connects international stakeholders to structured data, analytics and sustainability insights on the Brazilian port sector. It brings together cargo dashboards (ANTAQ 2010 to 2024), the SDG Port Hub, the CO₂ calculator, AI tools and a curated set of publications.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Open the platform and select a project to reach the dashboards, tools and official ANTAQ data portals, or browse the publications collection.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Port authorities, investors, maritime organisations and researchers needing reliable Brazilian port intelligence.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Centralises official data, analytical tools and literature in one place, replacing fragmented sources.</p></div>
+      <a class="visit" href="https://www.brazilportdata.com/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-green">🌱</div>
+        <div><div class="card-name">SDG Attributes · Framework</div><div class="card-url">sdgports.manus.space</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 8</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A sustainability assessment framework for ports covering 84 indicators across 8 SDGs and 20 thematic areas, on a 0 to 3 scoring scale. It is based on Cunha et al. (2025), Marine Policy.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Consult the indicators reference to understand each criterion, then use the linked simulation tool to score a port.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Port sustainability managers, researchers and auditors assessing SDG performance.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Offers a ready, peer-reviewed framework, removing the need to design an assessment model from scratch.</p></div>
+      <a class="visit" href="https://sdgports.manus.space/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-teal">📊</div>
+        <div><div class="card-name">SDG Attributes · Simulation Tool</div><div class="card-url">sdgporthub.com</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 8</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>The interactive companion to the framework. Score each indicator from 1 to 4 and the tool returns an overall sustainability score and a performance level, in English or Portuguese.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Select a score for every indicator; hover a score to see its criteria. The overall score and performance band update automatically.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Port managers and analysts benchmarking and reporting sustainability performance.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Turns the framework into an instant self-assessment, supporting reporting and gap analysis.</p></div>
+      <a class="visit" href="https://sdgporthub.com/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-blue">⚓</div>
+        <div><div class="card-name">SDG Ports Platform</div><div class="card-url">app18-seven.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 7</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A curated platform of resources on port regulation, decarbonisation and hydrogen, climate risk, blue economy and emissions inventories, organised in Brazilian and international collections.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Browse the thematic categories and switch between the Brazil and International tabs to reach curated sources and datasets.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Port managers, researchers and policy analysts who need a sector knowledge base.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Centralises scattered regulatory and technical sources, saving search time.</p></div>
+      <a class="visit" href="https://app18-seven.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-green">📡</div>
+        <div><div class="card-name">SDG Radar · Maranhão Municipalities</div><div class="card-url">radarods.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>An interactive simulator of the Municipal Sustainability Index (ISM) for municipalities in Maranhão, Brazil, across SDGs 7, 11, 13, 14 and 17. Portuguese interface.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Adjust each indicator level and watch the simulated impact on the ISM, including which funding calls it would unlock.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Municipal managers, policy analysts and researchers on local SDG progress.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Shows in real time how indicator improvements change the index, supporting evidence based planning.</p></div>
+      <a class="visit" href="https://radarods.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-blue">🤖</div>
+        <div><div class="card-name">BluePort AI</div><div class="card-url">blueportai.manus.space</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A computer-vision assistant that classifies port and marine waste into six categories from a single photo, delivered through a live Telegram bot. It grew out of an Omdena AI project on the Ganges river and is in active development.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Open @blueport_ia_wastebot on Telegram, send a photo of the waste, and receive the category, a confidence score and disposal guidance in seconds.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Port environmental teams, dock workers and computer-vision researchers.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Puts instant, no-training waste classification in any worker's hands, with logs that support compliance reporting.</p></div>
+      <a class="visit" href="https://blueportai.manus.space/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-orange">💨</div>
+        <div><div class="card-name">Port Emissions Dashboard</div><div class="card-url">emissoesco2.manus.space</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 7</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A dashboard that estimates port CO₂ emissions from auxiliary engines at berth (OPS), with annual totals, monthly distribution and carbon intensity. The method is fuel consumption multiplied by emission factor, with data for 2022 to 2024. Portuguese interface.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Browse the dashboard by year to read the totals, the monthly charts and the carbon intensity at berth.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Port operators, sustainability officers and researchers in decarbonisation.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Presents emissions and intensity ready for reporting, without building a spreadsheet model.</p></div>
+      <a class="visit" href="https://emissoesco2.manus.space/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-indigo">⚗️</div>
+        <div><div class="card-name">CO₂ Liquid Bulk Calculator</div><div class="card-url">co2-liquid-bulk-calculator.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 7</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Calculates CO₂ emissions for liquid bulk vessels' auxiliary engines during the port stay, following IMO methodology (Fourth IMO GHG Study 2020, MEPC.282(70), MEPC.391(81)), with a carbon-credit reference value.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Enter the vessel data, cargo type and berthing and unberthing times, and the tool returns the emissions estimate.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Terminal planners, emissions analysts and researchers on maritime decarbonisation.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Produces a standards based estimate per port call, supporting disclosure and carbon-credit assessment.</p></div>
+      <a class="visit" href="https://co2-liquid-bulk-calculator.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-blue">⛵</div>
+        <div><div class="card-name">Navigability Advisor · São Marcos Bay</div><div class="card-url">sailing-risk-advisor.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A seven-day navigability forecast for São Marcos Bay (São Luís, Brazil) with a traffic-light status per period, based on configurable thresholds for wind, wave, rain and visibility. Live data from Open-Meteo.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Open the page and read the go, caution or no-go status for each morning, afternoon and night.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Vessel operators, pilots and maritime risk researchers.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Converts live weather into a clear go or no-go signal. It supports decisions but does not replace official Navy bulletins.</p></div>
+      <a class="visit" href="https://sailing-risk-advisor.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  Developed by Darliane Ribeiro Cunha, PhD ·
+  <a href="https://darlianecunha.com/" target="_blank">darlianecunha.com</a>
+</footer>
+
+</body>
+</html>
