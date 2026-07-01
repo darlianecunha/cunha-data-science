@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Strategy for CV · Darliane Ribeiro Cunha</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #eef1f6; color: #1a2433; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #081634, #0d2350); color: white; padding: 48px 24px 40px; text-align: center; }
+    header h1 { font-size: 2rem; font-weight: 700; }
+    header p { max-width: 820px; margin: 14px auto 0; opacity: 0.92; }
+    main { max-width: 1050px; margin: 0 auto; padding: 34px 24px 60px; }
+    .section-title { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #15366e; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e3e8f0; }
+    .hero-card, .card { background: white; border-radius: 14px; padding: 22px 24px; box-shadow: 0 1px 6px rgba(13,35,80,0.06); border: 1px solid #e3e8f0; }
+    .hero-card { border-left: 6px solid #15366e; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    h2 { color: #0d2350; font-size: 1.25rem; margin-bottom: 10px; }
+    h3 { color: #0d2350; font-size: 1rem; margin-bottom: 8px; }
+    p { color: #475569; margin-bottom: 10px; }
+    ul { margin: 8px 0 0 18px; color: #475569; }
+    li { margin: 6px 0; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .badge { background: #e7edf7; color: #15366e; font-size: 0.76rem; font-weight: 700; padding: 5px 10px; border-radius: 999px; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 1px 6px rgba(13,35,80,0.06); }
+    th, td { text-align: left; padding: 13px 14px; border-bottom: 1px solid #e3e8f0; vertical-align: top; }
+    th { background: #0d2350; color: white; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    td { color: #475569; font-size: 0.92rem; }
+    .priority { font-weight: 700; color: #15366e; }
+    .visit { display: inline-block; margin-top: 16px; text-decoration: none; background: #0d2350; color: white; font-weight: 600; font-size: 0.86rem; padding: 10px 18px; border-radius: 8px; }
+    footer { text-align: center; padding: 28px 24px 40px; color: #8b97a8; font-size: 0.8rem; border-top: 1px solid #e3e8f0; }
+    footer a { color: #15366e; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>App Strategy to Strengthen the CV</h1>
+    <p>Portfolio roadmap for building a stronger Sustainability Data Scientist profile through applied maritime AI, emissions analytics, decision support and reproducible data products.</p>
+  </header>
+
+  <main>
+    <section class="hero-card">
+      <h2>Recommended flagship app: Port Decarbonisation Scenario Planner</h2>
+      <p>This should be the next high-impact portfolio application because it connects the strongest parts of the current profile: maritime decarbonisation, CO₂ modelling, SDG analytics, port operations, data engineering and applied machine learning.</p>
+      <p>The app would transform port call data into practical decisions by estimating baseline emissions, forecasting future emissions, comparing OPS and fuel scenarios, calculating avoided CO₂, and ranking investment priorities by environmental impact and feasibility.</p>
+      <div class="badge-row">
+        <span class="badge">Machine Learning</span>
+        <span class="badge">Carbon Accounting</span>
+        <span class="badge">Scenario Modelling</span>
+        <span class="badge">Maritime Analytics</span>
+        <span class="badge">Decision Support</span>
+        <span class="badge">Python</span>
+        <span class="badge">React or Streamlit</span>
+      </div>
+    </section>
+
+    <div class="section-title">Why this improves the CV</div>
+    <div class="grid">
+      <div class="card">
+        <h3>1. It moves the portfolio beyond dashboards</h3>
+        <p>The current portfolio already shows strong dashboards, calculators, text mining and computer vision. A scenario planner would show product thinking, forecasting, optimisation and policy-relevant decision support.</p>
+      </div>
+      <div class="card">
+        <h3>2. It demonstrates applied ML with domain value</h3>
+        <p>The app can include predictive models for emissions by cargo type, vessel profile, berth time and operational conditions, making the data science component clearer to recruiters.</p>
+      </div>
+      <div class="card">
+        <h3>3. It creates a strong interview story</h3>
+        <p>The project can be explained as an end-to-end data product: raw port data, modelling assumptions, validation, interactive scenarios, user outputs and reproducible GitHub documentation.</p>
+      </div>
+    </div>
+
+    <div class="section-title">Suggested app scope</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Module</th>
+          <th>What it does</th>
+          <th>CV signal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Baseline emissions</td>
+          <td>Calculates annual, monthly and per-call CO₂ emissions from auxiliary engines at berth.</td>
+          <td>Carbon accounting, port emissions, IMO-based methodology.</td>
+        </tr>
+        <tr>
+          <td>Forecasting model</td>
+          <td>Predicts future emissions under cargo growth, berth-time variation and vessel profile changes.</td>
+          <td>Machine learning, regression, model evaluation, feature engineering.</td>
+        </tr>
+        <tr>
+          <td>OPS scenario</td>
+          <td>Compares emissions with and without onshore power supply using electricity emission factors and adoption rates.</td>
+          <td>Climate analytics, energy transition, scenario modelling.</td>
+        </tr>
+        <tr>
+          <td>Investment prioritisation</td>
+          <td>Ranks berths or cargo groups by avoided emissions, operational feasibility and implementation priority.</td>
+          <td>Decision intelligence, analytics for managers, applied optimisation.</td>
+        </tr>
+        <tr>
+          <td>Executive report</td>
+          <td>Generates a downloadable summary with methods, charts, assumptions and recommendations.</td>
+          <td>Communication, stakeholder reporting, reproducible outputs.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Other app ideas to add later</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Priority</th>
+          <th>Application</th>
+          <th>Purpose</th>
+          <th>Best technology signal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="priority">High</td>
+          <td>ESG and SDG Disclosure NLP Auditor</td>
+          <td>Reads sustainability reports and scores the presence of SDG, GRI and climate-related evidence.</td>
+          <td>NLP, embeddings, explainable scoring, document AI.</td>
+        </tr>
+        <tr>
+          <td class="priority">High</td>
+          <td>Port Data Quality and Anomaly Detector</td>
+          <td>Detects outliers, missing records and inconsistent cargo or berth data in operational datasets.</td>
+          <td>Data engineering, SQL, DuckDB, anomaly detection.</td>
+        </tr>
+        <tr>
+          <td class="priority">Medium</td>
+          <td>BluePort AI Model Evaluation Page</td>
+          <td>Adds confusion matrix, confidence distribution, sample images and model limitations to the waste-classification project.</td>
+          <td>Computer vision, model evaluation, responsible AI.</td>
+        </tr>
+        <tr>
+          <td class="priority">Medium</td>
+          <td>Research Collaboration Recommender</td>
+          <td>Expands ResearchMatch with co-authorship networks, geographic filters and topic similarity explanations.</td>
+          <td>Graph analytics, OpenAlex API, recommender systems.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">Portfolio card ready to use</div>
+    <section class="card">
+      <h3>Port Decarbonisation Scenario Planner</h3>
+      <p><strong>Purpose:</strong> A decision-support application that estimates baseline at-berth CO₂ emissions, forecasts future emissions and compares decarbonisation scenarios such as OPS adoption, cleaner fuels and berth-priority strategies.</p>
+      <p><strong>How to use:</strong> Upload or select port call data, define operational assumptions and compare scenarios through emissions, avoided CO₂, carbon-cost savings and implementation priority.</p>
+      <p><strong>Who it is for:</strong> Port authorities, terminal operators, sustainability teams, researchers and climate-policy analysts working on maritime decarbonisation.</p>
+      <p><strong>Efficiency gain:</strong> Converts technical emissions data into investment-ready scenarios and clear management recommendations, reducing manual spreadsheet modelling.</p>
+      <p><strong>Suggested TRL:</strong> TRL 6 after a working prototype with real data and documented validation.</p>
+    </section>
+
+    <div class="section-title">CV bullet ready to use</div>
+    <section class="card">
+      <p>Designed and deployed a Port Decarbonisation Scenario Planner integrating IMO-based carbon accounting, machine-learning emission forecasts and OPS adoption scenarios to support berth-level investment prioritisation and climate decision-making for port stakeholders.</p>
+    </section>
+
+    <a class="visit" href="index.html">Back to Research Tools</a>
+  </main>
+
+  <footer>
+    Developed by Darliane Ribeiro Cunha, PhD · <a href="https://darlianecunha.com/" target="_blank">darlianecunha.com</a>
+  </footer>
+</body>
+</html>
