@@ -90,76 +90,6 @@
 
 <main>
 
-  <div class="section-title">Research &amp; Text Analytics</div>
-  <div class="grid">
-
-    <div class="card">
-      <div class="card-head">
-        <div class="icon bg-purple">🔎</div>
-        <div><div class="card-name">ResearchMatch for Topic</div><div class="card-url">researchmatchfortopic-znnz.vercel.app</div></div>
-        <span class="trl" title="Technology Readiness Level">TRL 3</span>
-      </div>
-      <div class="field"><span class="label">Purpose</span><p>Finds the leading researchers in any field. It searches paper titles and abstracts through OpenAlex, detects the dominant topics, and ranks authors by a balance of subject relevance and scholarly impact (h-index).</p></div>
-      <div class="field"><span class="label">How to use</span><p>Type a keyword or topic and the tool returns a ranked list of experts. Suggested searches are provided as a starting point.</p></div>
-      <div class="field audience"><span class="label">Who it is for</span><p>Researchers, PhD students and research managers scoping a field or seeking experts.</p></div>
-      <div class="field"><span class="label">Efficiency gain</span><p>Identifies the key authors in a topic in seconds, replacing slow manual literature scanning.</p></div>
-      <a class="visit" href="https://researchmatchfortopic-znnz.vercel.app/" target="_blank">Open tool</a>
-    </div>
-
-    <div class="card">
-      <div class="card-head">
-        <div class="icon bg-teal">🧬</div>
-        <div><div class="card-name">ResearchMatch with ORCID</div><div class="card-url">researchmatch-chi.vercel.app</div></div>
-        <span class="trl" title="Technology Readiness Level">TRL 3</span>
-      </div>
-      <div class="field"><span class="label">Purpose</span><p>Finds new potential collaborators aligned with an ORCID profile. Matching uses topic-vector (cosine) similarity over the profile's OpenAlex topics, and existing co-authors are excluded so the results are genuinely new contacts.</p></div>
-      <div class="field"><span class="label">How to use</span><p>Enter any ORCID iD and review the aligned researchers the tool proposes.</p></div>
-      <div class="field audience"><span class="label">Who it is for</span><p>Researchers and groups looking to expand their collaboration network for proposals and studies.</p></div>
-      <div class="field"><span class="label">Efficiency gain</span><p>Surfaces fresh, relevant collaborators automatically, saving hours of manual networking.</p></div>
-      <a class="visit" href="https://researchmatch-chi.vercel.app/" target="_blank">Open tool</a>
-    </div>
-
-    <div class="card">
-      <div class="card-head">
-        <div class="icon bg-red">🔤</div>
-        <div><div class="card-name">PDF → VOSviewer Network</div><div class="card-url">text-umber-delta.vercel.app</div></div>
-        <span class="trl" title="Technology Readiness Level">TRL 7</span>
-      </div>
-      <div class="field"><span class="label">Purpose</span><p>Turns a set of PDFs into a word co-occurrence network for VOSviewer Online, detecting the most frequent terms automatically. Text is extracted entirely in the browser, with Portuguese and English stopwords removed and nothing sent to a server.</p></div>
-      <div class="field"><span class="label">How to use</span><p>Upload the PDFs, set the network parameters (minimum frequency, co-occurrence and maximum terms), and download the JSON. Then open it at <a href="https://web.vosviewer.com/" target="_blank">VOSviewer Online (web.vosviewer.com)</a> to generate the visualisation.</p></div>
-      <div class="field audience"><span class="label">Who it is for</span><p>Researchers running bibliometric or literature reviews and text mining.</p></div>
-      <div class="field"><span class="label">Efficiency gain</span><p>Automates the creation of co-occurrence maps from raw PDFs, a task that is slow and error prone by hand.</p></div>
-      <a class="visit" href="https://text-umber-delta.vercel.app/" target="_blank">Open tool</a>
-    </div>
-
-    <div class="card">
-      <div class="card-head">
-        <div class="icon bg-orange">🔠</div>
-        <div><div class="card-name">PDF Terms → VOSviewer</div><div class="card-url">textmining2.vercel.app</div></div>
-        <span class="trl" title="Technology Readiness Level">TRL 5</span>
-      </div>
-      <div class="field"><span class="label">Purpose</span><p>A directed text-mining tool with a controlled vocabulary. You define the keywords and the app counts their occurrences and co-occurrences across your PDFs, with grouped synonyms, compound terms, wildcards and thematic categories, then generates a JSON file for VOSviewer Online. It complements PDF → VOSviewer Network, which detects terms automatically.</p></div>
-      <div class="field"><span class="label">How to use</span><p>Upload the PDFs and list your keywords (group synonyms with "=", use "*" for variants and "[ ]" for categories, or load a domain pack). Set the network parameters and download the JSON, then open it at <a href="https://web.vosviewer.com/" target="_blank">VOSviewer Online (web.vosviewer.com)</a> to generate the visualisation.</p></div>
-      <div class="field audience"><span class="label">Who it is for</span><p>Researchers running directed bibliometric or content analysis with a predefined thesaurus.</p></div>
-      <div class="field"><span class="label">Efficiency gain</span><p>Measures exactly the concepts the study cares about and maps them, without manual counting.</p></div>
-      <a class="visit" href="https://textmining2.vercel.app/" target="_blank">Open tool</a>
-    </div>
-
-
-    <div class="card">
-      <div class="card-head">
-        <div class="icon bg-yellow">🛰️</div>
-        <div><div class="card-name">Funding Calls Monitor · Brazil–Germany</div><div class="card-url">editaismonitorv2.vercel.app</div></div>
-        <span class="trl" title="Technology Readiness Level">TRL 3</span>
-      </div>
-      <div class="field"><span class="label">Purpose</span><p>Automatically monitors and aggregates funding calls, scholarships and fellowships from German and Brazilian sources such as DAAD, DFG, the Humboldt Foundation, BMBF and UBA, Fraunhofer and EMSA, grouped by category including Maritime AI and decarbonisation.</p></div>
-      <div class="field"><span class="label">How to use</span><p>Filter by country and category to scan the latest dated opportunities, then follow each link to its source.</p></div>
-      <div class="field audience"><span class="label">Who it is for</span><p>Researchers, PhD students and research managers seeking funding and mobility, with a focus on Brazil–Germany cooperation.</p></div>
-      <div class="field"><span class="label">Efficiency gain</span><p>Replaces manual checking of many agency websites with a single, continuously updated feed.</p></div>
-      <a class="visit" href="https://editaismonitorv2.vercel.app/" target="_blank">Open tool</a>
-    </div>
-  </div>
-
   <div class="section-title">Ports, Sustainability &amp; SDGs</div>
   <div class="grid">
 
@@ -202,18 +132,6 @@
       <a class="visit" href="https://sdgporthub.com/" target="_blank">Open tool</a>
     </div>
 
-    <div class="card">
-      <div class="card-head">
-        <div class="icon bg-blue">⚓</div>
-        <div><div class="card-name">SDG Ports Platform</div><div class="card-url">app18-seven.vercel.app</div></div>
-        <span class="trl" title="Technology Readiness Level">TRL 7</span>
-      </div>
-      <div class="field"><span class="label">Purpose</span><p>A curated platform of resources on port regulation, decarbonisation and hydrogen, climate risk, blue economy and emissions inventories, organised in Brazilian and international collections.</p></div>
-      <div class="field"><span class="label">How to use</span><p>Browse the thematic categories and switch between the Brazil and International tabs to reach curated sources and datasets.</p></div>
-      <div class="field audience"><span class="label">Who it is for</span><p>Port managers, researchers and policy analysts who need a sector knowledge base.</p></div>
-      <div class="field"><span class="label">Efficiency gain</span><p>Centralises scattered regulatory and technical sources, saving search time.</p></div>
-      <a class="visit" href="https://app18-seven.vercel.app/" target="_blank">Open tool</a>
-    </div>
 
     <div class="card">
       <div class="card-head">
@@ -279,6 +197,64 @@
       <div class="field"><span class="label">Efficiency gain</span><p>Converts live weather into a clear go or no-go signal. It supports decisions but does not replace official Navy bulletins.</p></div>
       <a class="visit" href="https://sailing-risk-advisor.vercel.app/" target="_blank">Open tool</a>
     </div>
+
+  </div>
+
+  <div class="section-title">Research &amp; Text Analytics</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-purple">🔎</div>
+        <div><div class="card-name">ResearchMatch for Topic</div><div class="card-url">researchmatchfortopic-znnz.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Finds the leading researchers in any field. It searches paper titles and abstracts through OpenAlex, detects the dominant topics, and ranks authors by a balance of subject relevance and scholarly impact (h-index).</p></div>
+      <div class="field"><span class="label">How to use</span><p>Type a keyword or topic and the tool returns a ranked list of experts. Suggested searches are provided as a starting point.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers, PhD students and research managers scoping a field or seeking experts.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Identifies the key authors in a topic in seconds, replacing slow manual literature scanning.</p></div>
+      <a class="visit" href="https://researchmatchfortopic-znnz.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-teal">🧬</div>
+        <div><div class="card-name">ResearchMatch with ORCID</div><div class="card-url">researchmatch-chi.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 3</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Finds new potential collaborators aligned with an ORCID profile. Matching uses topic-vector (cosine) similarity over the profile's OpenAlex topics, and existing co-authors are excluded so the results are genuinely new contacts.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Enter any ORCID iD and review the aligned researchers the tool proposes.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers and groups looking to expand their collaboration network for proposals and studies.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Surfaces fresh, relevant collaborators automatically, saving hours of manual networking.</p></div>
+      <a class="visit" href="https://researchmatch-chi.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-red">🔤</div>
+        <div><div class="card-name">PDF → VOSviewer Network</div><div class="card-url">text-umber-delta.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 7</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>Turns a set of PDFs into a word co-occurrence network for VOSviewer Online, detecting the most frequent terms automatically. Text is extracted entirely in the browser, with Portuguese and English stopwords removed and nothing sent to a server.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Upload the PDFs, set the network parameters (minimum frequency, co-occurrence and maximum terms), and download the JSON. Then open it at <a href="https://web.vosviewer.com/" target="_blank">VOSviewer Online (web.vosviewer.com)</a> to generate the visualisation.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers running bibliometric or literature reviews and text mining.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Automates the creation of co-occurrence maps from raw PDFs, a task that is slow and error prone by hand.</p></div>
+      <a class="visit" href="https://text-umber-delta.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="icon bg-orange">🔠</div>
+        <div><div class="card-name">PDF Terms → VOSviewer</div><div class="card-url">textmining2.vercel.app</div></div>
+        <span class="trl" title="Technology Readiness Level">TRL 5</span>
+      </div>
+      <div class="field"><span class="label">Purpose</span><p>A directed text-mining tool with a controlled vocabulary. You define the keywords and the app counts their occurrences and co-occurrences across your PDFs, with grouped synonyms, compound terms, wildcards and thematic categories, then generates a JSON file for VOSviewer Online. It complements PDF → VOSviewer Network, which detects terms automatically.</p></div>
+      <div class="field"><span class="label">How to use</span><p>Upload the PDFs and list your keywords (group synonyms with "=", use "*" for variants and "[ ]" for categories, or load a domain pack). Set the network parameters and download the JSON, then open it at <a href="https://web.vosviewer.com/" target="_blank">VOSviewer Online (web.vosviewer.com)</a> to generate the visualisation.</p></div>
+      <div class="field audience"><span class="label">Who it is for</span><p>Researchers running directed bibliometric or content analysis with a predefined thesaurus.</p></div>
+      <div class="field"><span class="label">Efficiency gain</span><p>Measures exactly the concepts the study cares about and maps them, without manual counting.</p></div>
+      <a class="visit" href="https://textmining2.vercel.app/" target="_blank">Open tool</a>
+    </div>
+
 
   </div>
 
